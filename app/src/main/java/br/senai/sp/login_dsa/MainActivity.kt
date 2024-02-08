@@ -3,12 +3,18 @@ package br.senai.sp.login_dsa
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.offset
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.AlertDialogDefaults
@@ -46,23 +52,34 @@ class MainActivity : ComponentActivity() {
 fun Teste() {
     Surface(
         modifier = Modifier
-            .height(200.dp)
-            .width(200.dp),
+            .fillMaxSize(),
         color = Color(0xFA8A1C1C)
     ) {
         Box (
             modifier = Modifier
                 .background(
                     color = Color(0xFF00BCD4),
-                    shape = CircleShape
                 )
+
         ){
-            Text(
-                text = "Aulinha de Kotlin com Celso Furtado",
-                modifier = Modifier
-                    .align(Alignment.Center)
-                    .offset(x = 35.dp, y = 0.dp)
-            )
+            Column(
+                modifier = Modifier.fillMaxSize(),
+                verticalArrangement = Arrangement.SpaceEvenly
+            ) {
+                Text(text = "Aulinha de Kotlin com Celso Furtado",)
+                Text(text = "Aulinha de Kotlin com Celso Furtado",)
+                Text(text = "Aulinha de Kotlin com Celso Furtado",)
+                Text(text = "Aulinha de Kotlin com Celso Furtado",)
+                Text(text = "Aulinha de Kotlin com Celso Furtado",)
+                Row {
+                    Button(onClick = { /*TODO*/ }) {
+                        
+                    }
+                    Button(onClick = { /*TODO*/ }) {
+                        
+                    }
+                }
+            }
         }
     }
 }
