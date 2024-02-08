@@ -64,7 +64,8 @@ fun Teste() {
         ){
             Column(
                 modifier = Modifier.fillMaxSize(),
-                verticalArrangement = Arrangement.SpaceEvenly
+                verticalArrangement = Arrangement.SpaceBetween,
+                horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Text(text = "Aulinha de Kotlin com Celso Furtado",)
                 Text(text = "Aulinha de Kotlin com Celso Furtado",)
